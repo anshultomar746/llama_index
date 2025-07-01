@@ -6,7 +6,7 @@ build-backend = "hatchling.build"
 name = "llama-index-llms-parallel-web"
 version = "0.1.0"
 description = "LlamaIndex LLMs integration for Parallel AI"
-authors = [{name = "Parallel", email = "support@parallel.ai"}]
+authors = [{name = "Anshul Tomar", email = "anshul@parallel.ai"}]
 requires-python = ">=3.9,<4.0"
 readme = "README.md"
 license = "MIT"
@@ -16,10 +16,10 @@ dependencies = [
 ]
 
 [tool.hatch.build.targets.sdist]
-include = ["llama_index/"]
+include = ["llama_index/llms/parallel_web/"]
 
 [tool.hatch.build.targets.wheel]
-include = ["llama_index/"]
+include = ["llama_index/llms/parallel_web/"]
 
 [tool.llamahub]
 contains_example = true
